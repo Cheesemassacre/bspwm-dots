@@ -1,0 +1,2 @@
+# bspwm-dots
+bspwm dotfiles

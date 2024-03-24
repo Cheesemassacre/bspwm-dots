@@ -1,0 +1,41 @@
+super + e ; p ; r
+	./.picomreload2.sh
+
+super + shift + s
+	flameshot gui
+
+super + e ; t
+	nemo
+	
+super + e ; s ; p
+	distrobox-enter Arch -- spotify
+
+super + e ; d ; i
+	flatpak run dev.vencord.Vesktop
+
+super + e ; w ; w ; w
+	firefox
+
+super + shift + p
+        rofi -modi "clipboard:greenclip print" -show clipboard
+
+super + e ; m
+	./.monitoroc.sh
+
+super + v
+	gvim
+
+super + b
+	pavucontrol
+
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + shift + e
+    ./.poweopt.sh
+
+super + w
+        rofi -show window
+
+super + n
+	mate-terminal -e "nvim .notes"

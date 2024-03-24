@@ -81,8 +81,8 @@ super + {o,i}
 	bspc wm -h on
 
 # focus or send to the given desktop
-super + {_,shift + }{1-9,0,F1,F2}
-	bspc {desktop -f,node -d} '^{1-9,10,11,12}'
+super + {_,shift + }{1-9,0,F1,F2,F3,F4,F5,F6,F7,F8,F9,F10}
+	bspc {desktop -f,node -d} '^{1-9,10,11,12,13,14,15,16,17,18,19,20}'
 
 #
 # preselect
@@ -129,7 +129,7 @@ super + e ; p ; r
 	./.picomreload.sh
 
 super + shift + s
-	flameshot gui
+	xfce4-screenshooter
 
 super + e ; t
 	nemo
@@ -147,4 +147,28 @@ super + shift + p
         rofi -modi "clipboard:greenclip print" -show clipboard
 
 super + e ; m
-	./.monitoroc
+	./.monitoroc.sh
+
+super + shift + e
+    ./.poweopt.sh
+
+super + w
+        rofi -show window
+
+super + v
+	gvim
+
+super + n
+	mate-terminal -e "nvim .notes"
+
+super + e ; c
+	qalculate-gtk
+
+super + e ; u ; r ; l
+	./.urltest.sh
+
+super + ctrl + alt + w
+	./.hidescratch.sh
+
+super + ctrl + w
+	~/.returnhidden.sh
